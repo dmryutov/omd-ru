@@ -5,7 +5,7 @@
 Тестовое задание OMD OM Group по сбору, хранению, извлечению данных и аналитике
 
 ## Постановка задачи
-Представлена в файле [instruction.docx](instruction.docx)
+Представлена в файле [task.docx](task.docx)
 
 ## Используемые технологии
 - Python 3.6
@@ -78,6 +78,9 @@ pip install -r requirements.txt
 - [static](static)
 	- [css](static/css) - Папка со стилями
 	- [js/script.js](static/js/script.js) - Скрипт загрузки данных при смене города
+
+## Инструкция и описание
+Представлены в файле [instruction.docx](instruction.docx)
 
 ## Результаты анализа
 Представлены в файле [analysis.xlsx](analysis.xlsx)
