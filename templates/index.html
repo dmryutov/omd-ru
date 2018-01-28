@@ -40,7 +40,7 @@
                             <select name="city" id="city" class="custom-select">
                                 <option value="0" selected>-- Все --</option>
                                 {% for city in cities %}
-                                    <option value="{{ city.id }}">{{ city.name }}</option>
+                                    <option value="{{ city.city }}">{{ city.city__name }}</option>
                                 {% endfor %}
                             </select>
                         </form>
@@ -147,6 +147,16 @@
                         display: true,
                         ticks: {
                             beginAtZero: true
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Количество центров'
+                        }
+                    }],
+                    xAxes: [{
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Город'
                         }
                     }]
                 }

@@ -54,7 +54,9 @@ def index(request):
     # Load dealers data and some statistics
     data, stat = load_dealers(request)
     # Get cities list
-    cities = City.objects.all()
+    cities = data.values('city', 'city__name').order_by('city__name').distinct()
+    for q in cities:
+        print(q)
 
     return render(request, 'index.html', {
         'data': data,
