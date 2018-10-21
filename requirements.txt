@@ -1,4 +1,4 @@
-Django==1.11.*
+Django==1.11.15
 djangorestframework==3.7.3
 lxml==4.1.0
 pandas==0.22.0
